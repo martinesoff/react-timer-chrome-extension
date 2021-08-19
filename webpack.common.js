@@ -65,7 +65,7 @@ function getHtmlPlugins(chunks) {
       new HtmlPlugin({
         title: 'Page refresher',
         filename: `${chunk}.html`,
-        chunks: [chunk],
+        chunks: [chunk], //Allows you to add only some chunks (e.g only the unit-test chunk)
       })
   );
 }
